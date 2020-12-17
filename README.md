@@ -1,6 +1,12 @@
 # Agile Engine - Accounting notebook App
 ### Agile Engine Task test for interview
 
+
+## Dependencies used
+* Gomod for dependency management
+* Gingonic for routing and web context
+* Google UUID for UUID generation
+
 ## How To Run
 ```cd ./build```
 
