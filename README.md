@@ -47,6 +47,7 @@ Disclaimer: as in memory DB, tests need to be run in order (must not happen in r
 Service has been tested. Tests can be found under src/api/service/impl/accountsservice_test.go
 
 Coverage is at 44%, which would not be acceptable under real life conditions
-Coverage is at 
 
+## Disclaimer 2
+I've been working with Java for the last 2 years, so sorry if any naming convention is not compliant
 
