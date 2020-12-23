@@ -7,6 +7,7 @@ import (
 
 func main() {
 	environmentBuilder := builder.Build()
+
 	container := dependencies.GetContainer()
 	environmentBuilder.ConfigureRouter(container)
 	environmentBuilder.Run()

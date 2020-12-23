@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c1ad4471-855f-46f4-8324-926d815ae7ea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builder/builder.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builder/builder.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/controller/accounts.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/controller/accounts.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/repository/iaccountsrespository.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/repository/iaccountsrespository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/repository/impl/memoryaccountsrepository.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/repository/impl/memoryaccountsrepository.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/service/iaccountsservice.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/service/iaccountsservice.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/service/impl/accountsservice.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/service/impl/accountsservice.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/service/impl/accountsservice_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/service/impl/accountsservice_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +47,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.tried.to.enable.integration.dep.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/api/dependencies" />
-    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -69,7 +64,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.accountnotebook">
+  <component name="RunManager" selected="Go Test.Test in github.com/agileengine-tasktest/src/api/controller">
     <configuration name="Go Run" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="agileengine-tasktest" />
       <working_directory value="$PROJECT_DIR$" />
@@ -88,6 +83,27 @@
       <directory value="$PROJECT_DIR$" />
       <output_directory value="$PROJECT_DIR$/build" />
       <option name="run" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Run Tests" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
+      <module name="agileengine-tasktest" />
+      <working_directory value="$PROJECT_DIR$/src/api/service/impl" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <package value="github.com/agileengine-tasktest" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/src/api/service/impl/accountsservice_test.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test in github.com/agileengine-tasktest/src/api/controller" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="agileengine-tasktest" />
+      <working_directory value="$PROJECT_DIR$/src/api/controller" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/agileengine-tasktest/src/api/controller" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestAddCreditTransaction in github.com/agileengine-tasktest/src/api/service/impl" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -112,54 +128,21 @@
       <pattern value="^\QTestAddDebitTransaction\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestAddDebitTransactionFailNegativeBalance in github.com/agileengine-tasktest/src/api/service/impl" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="agileengine-tasktest" />
-      <working_directory value="$PROJECT_DIR$/src/api/service/impl" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="github.com/agileengine-tasktest/src/api/service/impl" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestAddDebitTransactionFailNegativeBalance\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestGetBalance in github.com/agileengine-tasktest/src/api/service/impl" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="agileengine-tasktest" />
-      <working_directory value="$PROJECT_DIR$/src/api/service/impl" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="github.com/agileengine-tasktest/src/api/service/impl" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestGetBalance\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="accountsservice_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="agileengine-tasktest" />
-      <working_directory value="$PROJECT_DIR$/src/api/service/impl" />
-      <framework value="gotest" />
-      <kind value="FILE" />
-      <package value="github.com/agileengine-tasktest" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/api/service/impl/accountsservice_test.go" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Go Build.accountnotebook" />
       <item itemvalue="Go Build.Go Run" />
       <item itemvalue="Go Test.TestAddCreditTransaction in github.com/agileengine-tasktest/src/api/service/impl" />
       <item itemvalue="Go Test.TestAddDebitTransaction in github.com/agileengine-tasktest/src/api/service/impl" />
-      <item itemvalue="Go Test.TestAddDebitTransactionFailNegativeBalance in github.com/agileengine-tasktest/src/api/service/impl" />
-      <item itemvalue="Go Test.TestGetBalance in github.com/agileengine-tasktest/src/api/service/impl" />
-      <item itemvalue="Go Test.accountsservice_test.go" />
+      <item itemvalue="Go Test.Run Tests" />
+      <item itemvalue="Go Test.Test in github.com/agileengine-tasktest/src/api/controller" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.accountsservice_test.go" />
-        <item itemvalue="Go Build.Go Run" />
-        <item itemvalue="Go Test.TestGetBalance in github.com/agileengine-tasktest/src/api/service/impl" />
+        <item itemvalue="Go Test.Test in github.com/agileengine-tasktest/src/api/controller" />
+        <item itemvalue="Go Test.Run Tests" />
         <item itemvalue="Go Test.TestAddDebitTransaction in github.com/agileengine-tasktest/src/api/service/impl" />
-        <item itemvalue="Go Test.TestAddDebitTransactionFailNegativeBalance in github.com/agileengine-tasktest/src/api/service/impl" />
+        <item itemvalue="Go Test.TestAddCreditTransaction in github.com/agileengine-tasktest/src/api/service/impl" />
+        <item itemvalue="Go Build.Go Run" />
       </list>
     </recent_temporary>
   </component>
@@ -184,12 +167,20 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/api/controller/accounts.go</url>
+          <line>42</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="DlvErrorBreakpoint" />
       </default-breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/agileengine_tasktest$accountsservice_test_go.out" NAME="accountsservice_test.go Coverage Results" MODIFIED="1608241647775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/agileengine_tasktest$Run_Tests.out" NAME="Run Tests Coverage Results" MODIFIED="1608566389933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/agileengine_tasktest$accountsservice_test_go.out" NAME="accountsservice_test.go Coverage Results" MODIFIED="1608243573450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

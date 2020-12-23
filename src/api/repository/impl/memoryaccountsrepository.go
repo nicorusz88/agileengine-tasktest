@@ -1,7 +1,6 @@
 package repository
 
 import (
-	"fmt"
 	"github.com/agileengine-tasktest/src/api/errors"
 	"github.com/agileengine-tasktest/src/api/model/account"
 	"sync"
@@ -32,17 +31,15 @@ const (
 var (
 	transactions   = sync.Map{}
 	currentBalance float64
-	balanceMutex   = &sync.Mutex{}
+	balanceMutex   = &sync.RWMutex{}
 )
 
 func (*MemoryTransactionPersistenceHandler) PersistTransaction(transaction account.Transaction) (account.Transaction, *errors.Error) {
+	balanceMutex.Lock()
+	defer balanceMutex.Unlock()
 	if transaction.Type == string(CREDIT) {
-		balanceMutex.Lock()
-		defer balanceMutex.Unlock()
 		currentBalance = currentBalance + transaction.Amount
 	} else {
-		balanceMutex.Lock()
-		defer balanceMutex.Unlock()
 		currentBalanceAux := currentBalance - transaction.Amount
 		if currentBalanceAux < 0 {
 			err := &errors.Error{
@@ -53,7 +50,6 @@ func (*MemoryTransactionPersistenceHandler) PersistTransaction(transaction accou
 			return transaction, err
 		}
 		currentBalance = currentBalanceAux
-		fmt.Printf("Account Balance %f", currentBalance)
 	}
 	transactions.Store(transaction.Id, transaction)
 	return transaction, nil
@@ -69,5 +65,7 @@ func (*MemoryTransactionPersistenceHandler) RetrieveTransactions() []account.Tra
 }
 
 func (*MemoryTransactionPersistenceHandler) RetrieveBalance() float64 {
+	balanceMutex.RLock()
+	defer balanceMutex.RUnlock()
 	return currentBalance
 }
